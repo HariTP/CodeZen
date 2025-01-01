@@ -7,7 +7,7 @@ const cors = require("cors");
 const PORT = 3000;
 require("dotenv").config();
 
-connectDB(process.env.DB_URL);
+connectDB(process.env.AZURE_COSMOS_CONNECTIONSTRING || process.env.DB_URL);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
