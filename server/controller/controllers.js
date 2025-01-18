@@ -501,7 +501,6 @@ module.exports = {
   handleGenerateProblemList,
   handleGenerateProblemDesc,
   handleGetProblemDesc,
-  executePy,
   testcase_temp,
   getCode,
   signIn,
